@@ -1,15 +1,15 @@
 { "questions": [{
     "questionAuthor": "Tim",
     "questionContent": "How do you Ember?",
-    "questionNote": "Ember is so hard... How do you even start Ember?"
+    "questionNotes": "Ember is so hard... How do you even start Ember?"
   }, {
     "questionAuthor": "Stephen",
     "questionContent": "Why won't my postgres database work?",
-    "questionNote": "I've tried everything. I can't even get the database to link!"
+    "questionNotes": "I've tried everything. I can't even get the database to link!"
   }, {
     "questionAuthor": "Ryan",
     "questionContent": "What is this SASS?",
-    "questionNote": "I was trying to get SASSY, but I apparently have no SASS. Anyone care to explain how to use it?"
+    "questionNotes": "I was trying to get SASSY, but I apparently have no SASS. Anyone care to explain how to use it?"
   }],
   "answers": [{
     "answerAuthor": "Shelby",
