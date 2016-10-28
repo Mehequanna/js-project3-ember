@@ -1,5 +1,6 @@
 $lt-backgrounds : rgba(0, 224, 69, .4);
 $md-backgrounds : rgba(31, 105, 54, .2);
+$mddk-backgrounds : rgba(31, 105, 54, .4);
 
 body {
   background-color: $lt-backgrounds;
@@ -11,6 +12,9 @@ body {
   a:hover {
     color: white;
     text-decoration: none;
+  }
+  .well {
+    background-color: $mddk-backgrounds;
   }
   .question-blocks,
   .new-question-form {
@@ -26,6 +30,20 @@ body {
     margin: 20px;
     .glyphicon-pencil {
       padding-left: 5px;
+    }
+  }
+  .new-answer-block {
+    padding: 15px;
+  }
+  .answer-block {
+    background-color: $md-backgrounds;
+    border-radius: 10px;
+    padding: 5%;
+    .answer-tiles {
+      background-color: $mddk-backgrounds;
+      padding: 2%;
+      margin: 2%;
+      border-radius: 25px;
     }
   }
 }
