@@ -1,5 +1,7 @@
 <!-- Links to index.hbs -->
-<div class="question-blocks text-center">
-  <h3>{{question.questionContent}}</h3>
-  <p>{{question.questionAuthor}}</p>
-</div>
+{{#link-to 'question' question.id}}
+  <div class="question-blocks text-center">
+    <h3>{{question.questionContent}}</h3>
+    <p>{{question.questionAuthor}}</p>
+  </div>
+{{/link-to}}
