@@ -1,9 +1,18 @@
+$lt-backgrounds : rgba(0, 224, 69, .4);
+$md-backgrounds : rgba(31, 105, 54, .2);
+
 body {
-  background-color: rgba(0, 224, 69, .4);
+  background-color: $lt-backgrounds;
   .question-blocks {
-    background-color: rgba(31, 105, 54, .3);
+    background-color: $md-backgrounds;
     border-radius: 5px;
     padding: 5px 0px;
     margin: 10px 0px;
+  }
+  .question-pages {
+    background-color: $md-backgrounds;
+    border-radius: 20px;
+    padding: 15px 0;
+    margin: 20px;
   }
 }
