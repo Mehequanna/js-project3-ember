@@ -1,1 +1,31 @@
-{{yield}}
+<!-- Linked to question-detail.hbs -->
+<div class="text-center">
+  {{#if showEditForm}}
+  <h1>Edit Question</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="questionContent">What's your question?</label>
+        <br>
+        {{input value=questionContent placehoder=question.questionContent id="questionContent"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionNotes">Notes</label>
+        <br>
+        {{textarea value=questionNotes placehoder=question.questionNotes id="questionNotes" cols="60" rows="7"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionAuthor">Username</label>
+        <br>
+        {{input value=questionAuthor placehoder=question.questionAuthor id="questionAuthor"}}
+      </div>
+
+      <button {{action 'editQuestion'}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+    <button {{action 'editQuestionForm'}} class="btn btn-small btn-danger">Edit <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+  {{/if}}
+</div>
