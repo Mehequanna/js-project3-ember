@@ -7,3 +7,9 @@
   {{edit-question question=question editQuestion="editQuestion"}}
 
 </div>
+
+<div class="answer-blocks">
+  {{#each question.answers as |answer|}}
+    {{answer.answerAuthor}}
+  {{/each}}
+</div>
