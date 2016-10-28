@@ -8,8 +8,8 @@
 
 </div>
 
-<div class="answer-blocks">
+<div class="answer-block">
   {{#each question.answers as |answer|}}
-    {{answer.answerAuthor}}
+    {{answer-tile answer=answer}}
   {{/each}}
 </div>
