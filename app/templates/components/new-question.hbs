@@ -1,8 +1,31 @@
 <!-- Linked to index.hbs -->
 <div class="text-center">
   {{#if addNewQuestion}}
-    Form to show
+  <h1>New Question</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="questionContent">What's your question?</label>
+        <br>
+        {{input value=questionContent id="questionContent"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionNotes">Notes</label>
+        <br>
+        {{textarea value=questionNotes id="questionNotes" cols="60" rows="7"}}
+      </div>
+
+      <div class="form-group">
+        <label for="questionAuthor">Author</label>
+        <br>
+        {{input value=questionAuthor id="questionAuthor"}}
+      </div>
+
+      <button {{action 'saveQuestion'}} class="btn btn-sm btn-primary">Save question!</button>
+    </form>
+  </div>
   {{else}}
-    <button {{action 'questionFormShow'}} class="btn btn-primary">Ask a Question!</button>
+    <button {{action 'questionFormShow'}} class="btn btn-lg btn-primary">Ask a Question!</button>
   {{/if}}
 </div>
