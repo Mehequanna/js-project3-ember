@@ -1,1 +1,8 @@
-{{yield}}
+<!-- Linked to index.hbs -->
+<div class="text-center">
+  {{#if addNewQuestion}}
+    Form to show
+  {{else}}
+    <button {{action 'questionFormShow'}} class="btn btn-primary">Ask a Question!</button>
+  {{/if}}
+</div>
