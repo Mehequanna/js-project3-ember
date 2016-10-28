@@ -21,7 +21,10 @@ body {
   .question-pages {
     background-color: $md-backgrounds;
     border-radius: 20px;
-    padding: 15px 0;
+    padding: 15px;
     margin: 20px;
+    .glyphicon-pencil {
+      padding-left: 5px;
+    }
   }
 }
