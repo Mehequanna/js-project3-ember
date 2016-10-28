@@ -1,8 +1,8 @@
 <!-- Linked to index.hbs -->
 <div class="text-center">
   {{#if addNewQuestion}}
-  <h1>New Question</h1>
-  <div>
+  <div class="new-question-form">
+    <h1>New Question</h1>
     <form>
       <div class="form-group">
         <label for="questionContent">What's your question?</label>
@@ -13,7 +13,7 @@
       <div class="form-group">
         <label for="questionNotes">Notes</label>
         <br>
-        {{textarea value=questionNotes id="questionNotes" cols="60" rows="7"}}
+        {{textarea value=questionNotes id="questionNotes" cols="30" rows="7"}}
       </div>
 
       <div class="form-group">

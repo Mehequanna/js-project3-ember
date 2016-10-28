@@ -12,7 +12,8 @@ body {
     color: white;
     text-decoration: none;
   }
-  .question-blocks {
+  .question-blocks,
+  .new-question-form {
     background-color: $md-backgrounds;
     border-radius: 5px;
     padding: 5px 0px;
