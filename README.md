@@ -18,6 +18,9 @@ To use the code, you can clone the repository at: [https://github.com/mehequanna
 * Run: $ ember serve
 * Go to: [http://localhost:4200](http://localhost:4200) in your browser.
 
+##To Explore
+I want to expand the app to have actual users, including an admin. The admin would be able to delete posts and comments.
+
 ##Known Issues
 
 ## Author
