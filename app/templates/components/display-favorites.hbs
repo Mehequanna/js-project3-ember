@@ -3,7 +3,7 @@
   <div class="row">
 
   {{#each favoriteList.faves as |fave|}}
-  <div class="col-xs-3">
+  <div class="col-sm-3">
       {{#link-to 'question' fave.id}}<p>{{fave.questionContent}}: {{fave.questionAuthor}}</p>{{/link-to}}
       <button class="btn btn-xs btn-danger" {{action 'removeFromFaves' fave}}><span class="glyphicon glyphicon-trash"></span></button>
     </div>
