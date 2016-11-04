@@ -1,8 +1,6 @@
 <!-- Links to index.hbs -->
 {{#link-to 'question' question.id}}
   <div class="question-blocks text-center">
-    <h3>{{question.questionContent}}</h3>
-    <h4>{{question.questionAuthor}}</h4>
-    <p>{{totalAnswers}}</p>
+    {{questionsFull}}
   </div>
 {{/link-to}}
