@@ -1,7 +1,12 @@
-<div class="well">
-  <h2>favorites</h2>
+<div class="well text-center">
+  <h2>Favorites</h2>
+  <div class="row">
+
   {{#each favoriteList.faves as |fave|}}
-    {{#link-to 'question' fave.id}}<p>{{fave.questionContent}}: {{fave.questionAuthor}}</p>{{/link-to}}
-    <button class="btn btn-xs btn-danger" {{action 'removeFromFaves' fave}}><span class="glyphicon glyphicon-trash"></span></button>
+  <div class="col-xs-3">
+      {{#link-to 'question' fave.id}}<p>{{fave.questionContent}}: {{fave.questionAuthor}}</p>{{/link-to}}
+      <button class="btn btn-xs btn-danger" {{action 'removeFromFaves' fave}}><span class="glyphicon glyphicon-trash"></span></button>
+    </div>
   {{/each}}
+</div>
 </div>
