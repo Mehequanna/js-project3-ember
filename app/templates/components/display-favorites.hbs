@@ -1,1 +1,7 @@
-{{yield}}
+<div class="well">
+  <h2>favorites</h2>
+  {{#each favoriteList as |fave|}}
+    <p>{{fave.questionContent}}: {{fave.questionAuthor}}</p>
+    <button class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+  {{/each}}
+</div>
