@@ -2,6 +2,6 @@
   <h2>favorites</h2>
   {{#each favoriteList.faves as |fave|}}
     <p>{{fave.questionContent}}: {{fave.questionAuthor}}</p>
-    <button class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+    <button class="btn btn-xs btn-danger" {{action 'removeFromFaves' fave}}><span class="glyphicon glyphicon-trash"></span></button>
   {{/each}}
 </div>
