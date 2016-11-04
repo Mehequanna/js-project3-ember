@@ -1,7 +1,7 @@
 <!-- Links to index.hbs -->
-{{#link-to 'question' question.id}}
-  <div class="question-blocks text-center">
+<div class="question-blocks text-center">
+  {{#link-to 'question' question.id}}
     {{questionsFull}}
-    <button class="btn btn-xs btn-info"><span class="glyphicon glyphicon-star"></span></button>
-  </div>
-{{/link-to}}
+  {{/link-to}}
+  <button class="btn btn-xs btn-info" {{action 'addToFaves' question}}><span class="glyphicon glyphicon-star"></span></button>
+</div>

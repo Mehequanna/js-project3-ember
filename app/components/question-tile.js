@@ -9,5 +9,12 @@ export default Ember.Component.extend({
     return Ember.String.htmlSafe('<h3>' + this.get('question.questionContent') + '</h3>' +
         '<h4>' + this.get('question.questionAuthor') + '</h4>' +
         '<p>' + this.get('totalAnswers') + '</p>');
-  })
+  }),
+  favoriteList: Ember.inject.service(),
+
+  actions: {
+    addToFaves(question) {
+      this.get('favoriteList').add(question);
+    }
+  }
 });
