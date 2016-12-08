@@ -4,6 +4,8 @@ Question and Answer Site
 ## Features
 This app will allow users to post questions. Then other users may answer the posted questions.
 
+![screenshot of project](questions.png)
+
 ##Technologies
 EmberJS, Firebase Database, CSS/SASS, NPM, Gulp, Bower
 
@@ -20,8 +22,6 @@ To use the code, you can clone the repository at: [https://github.com/mehequanna
 
 ##To Explore
 I want to expand the app to have actual users, including an admin. The admin would be able to delete posts and comments.
-
-##Known Issues
 
 ## Author
 Stephen Emery
